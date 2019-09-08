@@ -13,7 +13,23 @@ public class MakePyramid {
                          * * * * * *
 
         */
+        int rows = 6, k = 0;
+        for (int i = 1; i <= rows; ++i, k = 0) {
+            for (int space = 1; space <= rows - i; ++space) {
+                System.out.println(" ");
 
+            }
+            while (k != 2 * i-1) {
+                System.out.println("* ");
+                ++k;
+            }
+            System.out.println();
 
         }
-  }
+
+
+    }
+}
+
+
+
