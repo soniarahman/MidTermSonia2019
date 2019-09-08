@@ -23,4 +23,15 @@ public interface Employee {
 	//employee benefit
 	public void benefitLayout();
 
+	//employee pension
+	public int employeePension();
+
+	// employee bonus
+	public int employeeBonus ();
+
+	// employee of the Month present
+	public void employeeOfTheMonthPresent ();
+
+
+
 }

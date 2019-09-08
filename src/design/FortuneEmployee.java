@@ -2,6 +2,9 @@ package design;
 
 public class FortuneEmployee {
 
+
+
+
 	/**
 	 * FortuneEmployee class has a main methods where you will be able to create Object from
 	 * EmployeeInfo class to use fields and attributes.Demonstrate as many methods as possible 
