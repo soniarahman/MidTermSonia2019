@@ -12,7 +12,7 @@ public interface Employee {
 	public int employeeId();
 	
 	//employeeName() will return employee name
-	public String employeeName();
+	public int employeeName();
 	
 	//assignDepartment() will assign employee to departments
     public void assignDepartment();

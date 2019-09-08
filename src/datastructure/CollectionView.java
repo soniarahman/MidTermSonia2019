@@ -17,9 +17,16 @@ public static void main(String[] args) {
         map.put(4, "Boston");
         map.put(5, "San Jose");
         map.put(6, "Seattle");
+       //  System.out.println("Collection view is: "+ map.values());
+        for (HashMap.Entry<Integer, String> entry : map.entrySet()){
+                System.out.println("Key = " + entry.getKey() + ", Value = " +entry.getValue());
+        }
+
+
+        }
 
 
 
     }
 
-}
+

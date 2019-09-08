@@ -66,13 +66,54 @@ import java.util.Scanner;
 			this.pensions = pensions;
 			this.presents = presents;
 		}
-
 		public EmployeeInfo(String nameOfEmployees, int idOfEmployees, String departments, int salary) {
 			this.nameOfEmployees = nameOfEmployees;
 			this.idOfEmployees = idOfEmployees;
 			this.departments = departments;
 			this.salary = salary;
 		}
+		@Override
+		public int employeeId () {
+			return this.employeeId();
+		}
+
+		@Override
+		public int employeeName () {
+			return this.employeeId();
+		}
+
+		@Override
+		public void assignDepartment () {
+				System.out.println("QA");
+			}
+
+		@Override
+		public int calculateSalary () {
+			return this.salary;
+		}
+
+		@Override
+		public void benefitLayout () {
+			System.out.println("401K");
+		}
+
+		@Override
+		public int employeePension () {
+			return this.pensions;
+		}
+
+		@Override
+		public int employeeBonus () {
+			return this.employeeBonus();
+		}
+
+		@Override
+		public void employeeOfTheMonthPresent () {
+			System.out.println("$500:giftcard");
+		}
+
+
+
 
 		/*
 		 * This methods should calculate Employee bonus based on salary and performance.
@@ -128,39 +169,11 @@ import java.util.Scanner;
 				} else if (employmentYears >= 2) {
 					pension = 0.10;
 					totalPension = salary * pension;
-				} else {
-					return totalPension;
+				}
+				return totalPension;
 				}
 
 
-			@Override
-			public int employeeId ()
-			return ;
-
-			@Override
-			public String employeeName ()
-			return null;
-
-			@Override
-			public void assignDepartment ()
-
-			@Override
-			public int calculateSalary ()
-			return 0;
-
-			@Override
-			public void benefitLayout ()
-
-			@Override
-			public int employeePension ()
-			return 0;
-
-			@Override
-			public int employeeBonus ()
-			return 0;
-
-			@Override
-			public void employeeOfTheMonthPresent ()
 
 			private static class DateConversion {
 
@@ -224,6 +237,6 @@ import java.util.Scanner;
 				}
 			}
 		}
-	}
+
 
 
