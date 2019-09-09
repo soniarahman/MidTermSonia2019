@@ -93,32 +93,181 @@ There are three access specifiers: public, private and protected.
 
 What is OOP ? Define each feature of java OOP.
 A. Object Oriented Programming.
+
+Inheritance: When one object acquires all the properties and behaviors of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
+
+Polymorphism: If one task is performed in different ways, it is known as polymorphism. For example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc.
+In Java, we use method overloading and method overriding to achieve polymorphism.
+
+Abstraction: Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
+In Java, we use abstract class and interface to achieve abstraction.
+
+Encapsulation: Binding (or wrapping) code and data together into a single unit are known as encapsulation. For example, a capsule, it is wrapped with different medicines.
+A java class is the example of encapsulation. Java bean is the fully encapsulated class because all the data members are private here.
+
 What is Java Package and which package is imported by default?
+A. A java package is a group of similar types of classes, interfaces and sub-packages. Package in java can be categorized in two form, built-in package and user-defined package.
+There are many built-in packages such as java, lang, awt, javax, swing, net, io, util, sql etc.
+
+Three packages are imported by default for each source file. First, the package with no name. Second, the java.lang package.
+And third, the current package (the package in which the current file is defined).
+
 What is API? Name list of API that you have used so far.
+API - Application Programming Interface. Java application programming interface (API) is a list of all classes that are part of the Java development kit (JDK).
+It includes all Java packages, classes, and interfaces, along with their methods, fields, and constructors.
+
 Does java support multiple inheritance, explain why or why not?
+A. No, Java Does not support multiple inheritance because it creates confusion and complexity. To avoid ambiguity error java does not support multiple inheritance through class.
+But through the interface, multiple inheritance is possible in java.
+
 What is method overloading and when it happens?
+A. Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different.
+It is similar to constructor overloading in Java, that allows a class to have more than one constructor having different argument lists.
+
 Explain exceptions in java and how to handle it.
+A. An exception is an unwanted or unexpected event, which occurs during the execution of a program i.e at run time, that disrupts the normal flow of the program’s instructions.
+
+Whenever inside a method, if an exception has occurred, the method creates an Object known as Exception Object and hands it off to the run-time system(JVM).
+The exception object contains name and description of the exception, and current state of the program where exception has occurred. Creating the Exception Object and handling it to the run-time system is called throwing an Exception.
+There might be the list of the methods that had been called to get to the method where exception was occurred. This ordered list of the methods is called Call Stack.Now the following procedure will happen.
+The run-time system searches the call stack to find the method that contains block of code that can handle the occurred exception. The block of the code is called Exception handler.
+
 What is static keyword in java? How it has been used in variables and methods ?
+A. Static is a non-access modifier in Java which is applicable for the following:
+
+-blocks
+-variables
+-methods
+-nested classes
+
+To create a static member(block,variable,method,nested class), precede its declaration with the keyword static.
+When a member is declared static, it can be accessed before any objects of its class are created, and without reference to any object.
+
 What is final and how it has been used variables and methods?
+A. Final is a non-access modifier applicable only to a variable, a method or a class.
+When a variable is declared with final keyword, its value can’t be modified, essentially, a constant. This also means that we must initialize a final variable.
+The only difference between a normal variable and a final variable is that we can re-assign value to a normal variable but we cannot change the value of a final variable once assigned. Hence final variables must be used only for the values that we want to remain constant throughout the execution of program.
+ex: final StringBuffer sb = "Sonia Rahman"; // we can't change the value of sb
+
 What is final, finally and finalize?
+A. Final -
+1. Final is used to apply restrictions on class, method and variable.
+2. Final class can't be inherited, final method can't be overridden and final variable value can't be changed.
+3. Final is a keyword.
+
+Finally -
+1. Finally is used to place important code, it will be executed whether exception is handled or not.
+2. Finally is a block.
+
+Finalize -
+1. Finalize is used to perform clean up processing just before object is garbage collected.
+2. Finalize is a method.
+
+
 What is a constructor ?
+A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created.
+Constructor can also take parameters.
+
 Can we have multiple constructors in a class?
+A. Yes.
+
 If we don't have a constructor declared, what is called during the object creation?
+A. Default constructor.
+
 What is "this" keyword in java ?
+A. Keyword THIS is a reference variable in Java that refers to the current object. ... It can be used to refer instance variable of current class.
+It can be used to invoke or initiate current class constructor. It can be passed as an argument in the method call.
+
 What is "super" keyword in java? How many possible way can you use?
+A. 1) super is used to refer immediate parent class instance variable.
+We can use super keyword to access the data member or field of parent class.
+
 What is JVM stand for ?
+A. Java Virtual Machine.
+
 Is JVM platform independent?
+A. yes
+
 What version of java are you using?
+a. java version "12.0.2"
+
 What is JAR stand for ?
+Java ARchieve.
+
 What is the difference between JDK and JVM?
+A. JDK is an acronym for Java Development Kit. The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets. It physically exists. It contains JRE + development tools.
+
+   JDK is an implementation of any one of the below given Java Platforms released by Oracle Corporation:
+
+   Standard Edition Java Platform
+   Enterprise Edition Java Platform
+   Micro Edition Java Platform
+   The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. to complete the development of a Java Application.
+
+ JVM (Java Virtual Machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist. It is a specification that provides a runtime environment in which Java bytecode can be executed. It can also run those programs which are written in other languages and compiled to Java bytecode.
+
+
+ JVMs are available for many hardware and software platforms. JVM, JRE, and JDK are platform dependent because the configuration of each OS is different from each other. However, Java is platform independent. There are three notions of the JVM: specification, implementation, and instance.
+
+ The JVM performs the following main tasks:
+
+ Loads code
+ Verifies code
+ Executes code
+ Provides runtime environment
+
 What is the difference between JVM and JRE?
+
+JVM (Java Virtual Machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist. It is a specification that provides a runtime environment in which Java bytecode can be executed. It can also run those programs which are written in other languages and compiled to Java bytecode.
+
+
+JVMs are available for many hardware and software platforms. JVM, JRE, and JDK are platform dependent because the configuration of each OS is different from each other. However, Java is platform independent. There are three notions of the JVM: specification, implementation, and instance.
+
+The JVM performs the following main tasks:
+
+Loads code
+Verifies code
+Executes code
+Provides runtime environment
+
+JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used for developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of libraries + other files that JVM uses at runtime.
+
+The implementation of JVM is also actively released by other companies besides Sun Micro Systems.
+
 What is compile time and run time?
+A. Runtime and compile time are programming terms that refer to different stages of software program development. In order to create a program, a developer first writes source code, which defines how the program will function. Small programs may only contain a few hundred lines of source code, while large programs may contain hundreds of thousands of lines of source code.
+The source code must be compiled into machine code in order to become and executable program. This compilation process is referred to as compile time.
+A compiled program can be opened and run by a user. When an application is running, it is called runtime.
+
+The terms "runtime" and "compile time" are often used by programmers to refer to different types of errors. A compile time error is a problem such as a syntax error or missing file reference that prevents the program from successfully compiling. The compiler produces compile time errors and usually indicates what line of the source code is causing the problem.
+If a program's source code has already been compiled into an executable program, it may still have bugs that occur while the program is running. Examples include features that don't work, unexpected program behavior, or program crashes. These types of problems are called runtime errors since they occur at runtime.
+
 What is heap?
+A. The heap is the runtime data area from which memory for all class instances and arrays is allocated. The heap is created on virtual machine start-up. Heap storage for objects is reclaimed by an automatic storage management system (known as a garbage collector); objects are never explicitly deallocated.
+
 How java manage it's memory?
+The JVM loads the code, verifies the code, executes the code, manages memory (this includes allocating memory from the Operating System (OS), managing Java allocation including heap compaction and removal of garbage objects) and finally provides the runtime environment.
+
 What is the difference between String, StringBuffer and StringBuilder?
-What is Singleton class?
-What is Serialization and Deserialization?
-when to use transient variable in java?
+A. String is immutable whereas StringBuffer and StringBuider are mutable classes.
+   StringBuffer is thread safe and synchronized whereas StringBuilder is not, thats why StringBuilder is more faster than StringBuffer.
+   String concat + operator internally uses StringBuffer or StringBuilder class.
+   For String manipulations in non-multi threaded environment, we should use StringBuilder else use StringBuffer class.
+   That’s all for a quick roundup of difference between String vs StringBuffer vs StringBuilder. In most of the scenarios for string manipulation, StringBuilder is better suited than StringBuffer.
+
+ What is Singleton class?
+ A. In object-oriented programming, a singleton class is a class that can have only one object (an instance of the class) at a time.
+ To design a singleton class:
+
+ Make constructor as private.
+ Write a static method that has return type object of this singleton class.
+
+  What is Serialization and Deserialization?
+  A. Serialization is a process of converting an object into a sequence of bytes which can be persisted to a disk or database or can be sent through streams.
+  The reverse process of creating object from sequence of bytes is called deserialization.
+
+ when to use transient variable in java?
+ A.
 Difference between while and do..while loop?
 What is Enum?
 What is Iterator?
