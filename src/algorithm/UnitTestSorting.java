@@ -23,7 +23,57 @@ public class UnitTestSorting {
 
         //Now implement Unit test for rest of the soring algorithm...................below
 
+        //InsertationSort
+        sort.insertionSort(unSortedArray);
+        System.out.println("After Intertation Sort");
+        for (int i:unSortedArray) {
+            System.out.println(i+ " ");
+        }
+        System.out.println();
 
+        //BubbleSort
+        sort.bubbleSort(unSortedArray);
+        System.out.println("After Bubble Sort");
+        for (int j:unSortedArray) {
+            System.out.println(j+ " ");
+        }
+
+        System.out.println();
+
+        //MergeSort
+
+        sort.mergeSort(unSortedArray);
+        System.out.println("After Merge Sort");
+        for (int k:unSortedArray) {
+            System.out.println(k+ " ");
+        }
+        System.out.println();
+
+        //HeapSort
+        sort.heapSort(unSortedArray);
+        System.out.println("After Heap Sort");
+        for (int l:unSortedArray) {
+            System.out.println(l+ " ");
+        }
+        System.out.println();
+
+        //BucketSort
+
+        sort.bucketSort(unSortedArray);
+        System.out.println("After Bucket Sort");
+        for (int m:unSortedArray) {
+            System.out.println(m+ " ");
+        }
+        System.out.println();
+
+        //ShellSort
+
+        sort.shellSort(unSortedArray);
+        System.out.println("After Shell Sort");
+        for (int n :unSortedArray) {
+            System.out.println(n + " ");
+        }
+        System.out.println();
 
 
 
